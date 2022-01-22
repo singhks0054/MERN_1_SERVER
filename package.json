@@ -20,7 +20,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.3.0",
     "mongoose": "^6.1.5",
-    "nodemon": "^2.0.15",
     "validator": "^13.7.0"
   }
 }
