@@ -12,7 +12,7 @@ const sendContactMail = (email, name, subject, message) => {
     to: email,
     from: 'singhks0054@gmail.com',
     subject: subject,
-    text: ` FROM : ${name} , ${message}`
+    text: ` Thanks, ${name} for reaching us regarding ${subject}. We will contact you Soon.`
   })
 }
 const sendBookingMail = (name, destination, from, to, email) => {

@@ -34,7 +34,6 @@ const userSchema = new Mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    minlength: 7,
     validate(value) {
       if (value.toLowerCase().includes('password')) {
         throw new Error('PASSWORD CANNOT CONTAIN "PASSWORD" AS A PASSWORD')
@@ -58,7 +57,10 @@ const userSchema = new Mongoose.Schema({
       type: String,
       required: true
     }
-  }]
+  }],
+  image: {
+    type: Buffer
+  }
 }, {
   timestamps: true
 })
